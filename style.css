@@ -1,0 +1,153 @@
+* {
+    padding: 0px;
+    margin: 2px;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Inter', sans-serif;
+}
+.tabWrapper {
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.dot {
+    flex: 1;
+    max-width: 2px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+.site{
+    flex: 1;
+}
+.item_details {
+    display: flex;
+    align-items: center;
+}
+.tab {
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 180px;
+    height: 40px;
+    border-radius: 2px;
+    text-align: center;
+}
+.tabContent {
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.card {
+    width: 150px;
+}
+
+.image img {
+    height: 175px;
+    width: 100%;
+}
+
+.title {
+    font-size: .8rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.site {
+    font-size: .65rem;
+}
+
+
+.price_details {
+    font-size: .6rem;
+    font-weight: 600;
+}
+
+.add_card {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: .7rem;
+    position: relative;
+
+}
+
+#contentWrapper {
+    max-width: 100%;
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.comp_price {
+    color: #8F8F8F;
+    text-decoration: line-through;
+}
+.off{
+  color: #FF3737;
+}
+.add_card {
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 4px 4px;
+    border-radius: 2px;
+}
+.placeHolder {
+    margin-top: 4px;
+    margin-left: 8px;
+    position: absolute;
+    padding: 8px 8px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    border-radius: 1px;
+    font-size: 8px;
+    font-weight: 600;
+}
+.heading {
+    padding-top: 10px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media (max-width : 767px){
+
+  .tab {
+    width: 30%;
+  }
+ 
+  #contentWrapper{
+    flex-wrap: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (min-width : 767px) and (max-width : 1024px) {
+ 
+  #contentWrapper{
+    flex-wrap: 80%;
+    flex-direction: row;
+    
+  }
+  
+}
